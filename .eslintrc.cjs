@@ -21,14 +21,12 @@ module.exports = {
   },
 
   // Base config
-  extends: [
-    "eslint:recommended",
-  ],
+  extends: ["eslint:recommended"],
 
   // Custom rules
   rules: {
     "no-console": "warn",
-    "react/prop-types": "off",
+    "react/prop-types": [0, {}],
     "react/no-unescaped-entities": "off",
     "prettier/prettier": [
       "error",
