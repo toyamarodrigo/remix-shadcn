@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "steoates.autoimport",
+    "aaron-bond.better-comments",
+    "naumovs.color-highlight",
+    "mikestead.dotenv",
+    "usernamehw.errorlens",
+    "dsznajder.es7-react-js-snippets",
+    "biomejs.biome",
+    "ms-vsliveshare.vsliveshare-pack",
+    "yzhang.markdown-all-in-one",
+    "esbenp.prettier-vscode",
+    "wayou.vscode-todo-highlight",
+    "yoavbls.pretty-ts-errors",
+    "bradlc.vscode-tailwindcss",
+    "Gruntfuggly.todo-tree",
+    "ms-playwright.playwright"
+  ]
+}

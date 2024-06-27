@@ -1,0 +1,60 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.2/schema.json",
+	"vcs": {
+		"clientKind": "git",
+		"enabled": true,
+		"useIgnoreFile": true,
+		"defaultBranch": "main"
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"indentStyle": "space",
+		"indentWidth": 2,
+		"lineEnding": "lf",
+		"lineWidth": 100,
+		"attributePosition": "auto"
+	},
+	"organizeImports": { "enabled": true },
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"correctness": { "useHookAtTopLevel": "error" },
+			"performance": { "noBarrelFile": "error", "noReExportAll": "error" },
+			"style": {
+				"noNegationElse": "error",
+				"useConst": "off",
+				"useExportType": "off",
+				"useImportType": "off",
+				"noParameterAssign": "off"
+			},
+			"suspicious": {
+				"noConsoleLog": "warn",
+				"useAwait": "warn",
+				"noDoubleEquals": "error",
+				"noEmptyBlockStatements": "warn",
+				"noSkippedTests": "error"
+			}
+		},
+		"ignore": ["**/node_modules/**", "**/dist/**", "**/build/**"]
+	},
+	"javascript": {
+		"formatter": {
+			"jsxQuoteStyle": "double",
+			"quoteProperties": "asNeeded",
+			"trailingCommas": "all",
+			"semicolons": "always",
+			"arrowParentheses": "always",
+			"bracketSpacing": false,
+			"bracketSameLine": false,
+			"quoteStyle": "double",
+			"attributePosition": "auto"
+		}
+	},
+	"overrides": [
+		{ "include": ["**/*.{js,jsx,ts,tsx}"] },
+		{ "include": ["**/*.{ts,tsx}"] },
+		{ "include": ["**/*.md"], "formatter": { "indentStyle": "tab" } },
+		{ "include": [".eslintrc.js"] }
+	]
+}
