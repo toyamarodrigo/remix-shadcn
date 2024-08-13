@@ -5,6 +5,8 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 installGlobals();
 
+const MODE = process.env.NODE_ENV;
+
 export default defineConfig({
   plugins: [
     remix({
@@ -17,4 +19,10 @@ export default defineConfig({
     }),
     tsconfigPaths(),
   ],
+  build: {
+    cssMinify: MODE === "production",
+    rollupOptions: {
+      external: [/node:.*/],
+    },
+  },
 });
