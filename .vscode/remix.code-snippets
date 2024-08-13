@@ -35,6 +35,42 @@
 			"}",
 		],
 	},
+	"defineClientLoader": {
+		"prefix": "/defineClientLoader",
+		"scope": "typescriptreact,javascriptreact,typescript,javascript",
+		"body": [
+			"export const loader = defineLoader(() => {",
+			"  return {}",
+			"})",
+		],
+	},
+	"defineClientAction": {
+		"prefix": "/defineClientAction",
+		"scope": "typescriptreact,javascriptreact,typescript,javascript",
+		"body": [
+			"export const action = defineAction(() => {",
+			"  return {}",
+			"})",
+		],
+	},
+	"defineLoader": {
+		"prefix": "/defineLoader",
+		"scope": "typescriptreact,javascriptreact,typescript,javascript",
+		"body": [
+			"export const loader = defineLoader(() => {",
+			"  return {}",
+			"})",	
+		],
+	},
+	"defineAction": {
+		"prefix": "/defineAction",
+		"scope": "typescriptreact,javascriptreact,typescript,javascript",
+		"body": [
+			"export const action = defineAction(() => {",
+			"  return {}",
+			"})",
+		],
+	},
 	"default": {
 		"prefix": "/default",
 		"scope": "typescriptreact,javascriptreact,typescript,javascript",

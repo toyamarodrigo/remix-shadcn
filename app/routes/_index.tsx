@@ -5,15 +5,15 @@ import {Button} from "~/components/ui/button";
 
 export const meta: MetaFunction = () => {
   return [
-    {title: "Remix Vite template + Shadcn"},
-    {name: "description", content: "Remix Vite template + Shadcn"},
+    {title: "Remix + Shadcn Template"},
+    {name: "description", content: "Remix + Shadcn Template"},
   ];
 };
 
 export default function Index() {
   return (
     <div
-      className="min-h-screen flex flex-col justify-center items-center"
+      className="flex min-h-screen flex-col items-center justify-center"
       style={{fontFamily: "system-ui, sans-serif", lineHeight: "1.8"}}
     >
       <Button asChild>
